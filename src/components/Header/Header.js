@@ -1,14 +1,6 @@
 import React from "react";
-import {
-  Button,
-  Card,
-  Carousel,
-  Container,
-  Form,
-  FormControl,
-  Nav,
-  Navbar
-} from "react-bootstrap";
+import { Card, Carousel, Container, Nav, Navbar } from "react-bootstrap";
+import { AiOutlineYoutube } from "react-icons/ai";
 import "./Header.css";
 
 const Header = () => {
@@ -16,29 +8,36 @@ const Header = () => {
     <header className="header">
       <Navbar expand="lg" className="py-3 sticky-top">
         <Container container="true">
-          <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+          <Navbar.Brand href="#" className="fw-bold">
+            CAPITAL DOCTOR
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
-              className="me-auto my-2 my-lg-0"
+              className="mx-auto my-2 my-lg-0"
               style={{ maxHeight: "150px" }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#product">Product</Nav.Link>
-              <Nav.Link href="#service">Service</Nav.Link>
-              <Nav.Link href="#client">Become a Client</Nav.Link>
-              <Nav.Link href="#about">About us</Nav.Link>
+              <Nav.Link className="mx-lg-2" href="#action1">
+                Home
+              </Nav.Link>
+              <Nav.Link className="mx-lg-2" href="#product">
+                Product
+              </Nav.Link>
+              <Nav.Link className="mx-lg-2" href="#service">
+                Service
+              </Nav.Link>
+              <Nav.Link className="mx-lg-2" href="#client">
+                Become a Client
+              </Nav.Link>
+              <Nav.Link className="mx-lg-2" href="#about">
+                About us
+              </Nav.Link>
             </Nav>
-            <Form className="d-flex">
-              <FormControl
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form>
+            <div className="link-hover">
+              <span className="me-1">Youtube</span>
+              <AiOutlineYoutube className="fs-2" />
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
@@ -52,16 +51,29 @@ const Header = () => {
             <div className="container mt-5">
               <div className="row pt-5">
                 <div className="col-6">
-                  <h3 className="display-2 fw-bold ms-md-5">
-                    Where creative process happens
+                  <h3
+                    data-aos="fade-right"
+                    data-aos-delay="400"
+                    data-aos-duration="1000"
+                    className="display-2 fw-bold ms-md-5 text-center custom-primary"
+                  >
+                    "মুজিববর্ষের অঙ্গিকার
+                    <br />
+                    উন্নত অর্থয়ায়নে উৎসব হবে পুঁজিবাজার"
                   </h3>
                 </div>
-                <div className="col-6">
+                <div
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                  data-aos-duration="1000"
+                  className="col-6"
+                >
                   <div className="row">
                     <div className="col">
-                      <Card className="bg-dark text-white">
+                      <Card className="bg-white text-white">
                         <Card.Img
-                          src="https://jssors8.azureedge.net/demos/image-slider/img/faded-monaco-scenery-evening-dark-picjumbo-com-image.jpg"
+                          style={{ height: "300px" }}
+                          src="https://i.pinimg.com/originals/aa/73/bc/aa73bc3310982f1f7ba938a6cca2a199.png"
                           alt="Card image"
                         />
                       </Card>
@@ -71,7 +83,8 @@ const Header = () => {
                     <div className="col-6">
                       <Card className="bg-dark text-white">
                         <Card.Img
-                          src="https://jssors8.azureedge.net/demos/image-slider/img/faded-monaco-scenery-evening-dark-picjumbo-com-image.jpg"
+                          style={{ height: "110px" }}
+                          src="https://www.financialexpress.com/wp-content/uploads/2021/05/7-11-620x400.jpg"
                           alt="Card image"
                         />
                       </Card>
@@ -79,7 +92,8 @@ const Header = () => {
                     <div className="col-6">
                       <Card className="bg-dark text-white">
                         <Card.Img
-                          src="https://jssors8.azureedge.net/demos/image-slider/img/faded-monaco-scenery-evening-dark-picjumbo-com-image.jpg"
+                          style={{ height: "110px" }}
+                          src="https://www.ismdelhi.in/wp-content/uploads/2019/02/slider1-1024x436.jpg"
                           alt="Card image"
                         />
                       </Card>
@@ -98,16 +112,24 @@ const Header = () => {
             <div className="container mt-5">
               <div className="row pt-5">
                 <div className="col-6">
-                  <h3 className="display-2 fw-bold ms-md-5">
-                    Get something never forget
+                  <h3
+                    data-aos="fade-right"
+                    data-aos-delay="400"
+                    data-aos-duration="1000"
+                    className="display-2 fw-bold ms-md-5 text-center custom-primary"
+                  >
+                    Capital Markets Products
+                    <br />
+                    Include Securities
                   </h3>
                 </div>
                 <div className="col-6">
                   <div className="row">
                     <div className="col">
-                      <Card className="bg-dark text-white">
+                      <Card className="bg-white text-white">
                         <Card.Img
-                          src="https://jssors8.azureedge.net/demos/image-slider/img/faded-monaco-scenery-evening-dark-picjumbo-com-image.jpg"
+                          style={{ height: "300px" }}
+                          src="https://img.etimg.com/thumb/msid-85574677,width-1200,height-900,imgsize-117743,overlay-etmarkets/photo.jpg"
                           alt="Card image"
                         />
                       </Card>
@@ -117,7 +139,8 @@ const Header = () => {
                     <div className="col-6">
                       <Card className="bg-dark text-white">
                         <Card.Img
-                          src="https://jssors8.azureedge.net/demos/image-slider/img/faded-monaco-scenery-evening-dark-picjumbo-com-image.jpg"
+                          style={{ height: "110px" }}
+                          src="https://www.financialexpress.com/wp-content/uploads/2021/05/7-11-620x400.jpg"
                           alt="Card image"
                         />
                       </Card>
@@ -125,7 +148,8 @@ const Header = () => {
                     <div className="col-6">
                       <Card className="bg-dark text-white">
                         <Card.Img
-                          src="https://jssors8.azureedge.net/demos/image-slider/img/faded-monaco-scenery-evening-dark-picjumbo-com-image.jpg"
+                          style={{ height: "110px" }}
+                          src="https://www.ismdelhi.in/wp-content/uploads/2019/02/slider1-1024x436.jpg"
                           alt="Card image"
                         />
                       </Card>
@@ -144,16 +168,24 @@ const Header = () => {
             <div className="container mt-5">
               <div className="row pt-5">
                 <div className="col-6">
-                  <h3 className="display-2 fw-bold ms-md-5">
-                    Where you get the best support
+                  <h3
+                    data-aos="fade-right"
+                    data-aos-delay="400"
+                    data-aos-duration="1000"
+                    className="display-2 fw-bold ms-md-5 text-center custom-primary"
+                  >
+                    Collective
+                    <br />
+                    Investment Scheme
                   </h3>
                 </div>
                 <div className="col-6">
                   <div className="row">
                     <div className="col">
-                      <Card className="bg-dark text-white">
+                      <Card className="bg-white text-white">
                         <Card.Img
-                          src="https://jssors8.azureedge.net/demos/image-slider/img/faded-monaco-scenery-evening-dark-picjumbo-com-image.jpg"
+                          style={{ height: "300px" }}
+                          src="https://certicom.in/wp-content/uploads/2018/07/1_J6G5AVDJl9T7QwWFlkdASQ.png"
                           alt="Card image"
                         />
                       </Card>
@@ -163,7 +195,8 @@ const Header = () => {
                     <div className="col-6">
                       <Card className="bg-dark text-white">
                         <Card.Img
-                          src="https://jssors8.azureedge.net/demos/image-slider/img/faded-monaco-scenery-evening-dark-picjumbo-com-image.jpg"
+                          style={{ height: "110px" }}
+                          src="https://s28126.pcdn.co/blogs/ask-experian/wp-content/uploads/Which-Type-of-Investment-Has-the-Highest-Risk.jpg"
                           alt="Card image"
                         />
                       </Card>
@@ -171,7 +204,8 @@ const Header = () => {
                     <div className="col-6">
                       <Card className="bg-dark text-white">
                         <Card.Img
-                          src="https://jssors8.azureedge.net/demos/image-slider/img/faded-monaco-scenery-evening-dark-picjumbo-com-image.jpg"
+                          style={{ height: "110px" }}
+                          src="https://www.ismdelhi.in/wp-content/uploads/2019/02/slider1-1024x436.jpg"
                           alt="Card image"
                         />
                       </Card>

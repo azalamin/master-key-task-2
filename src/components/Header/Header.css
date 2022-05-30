@@ -7,3 +7,13 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.custom-primary {
+  color: #1a093f;
+}
+.link-hover {
+  cursor: pointer;
+}
+.link-hover:hover {
+  color: red;
+}
