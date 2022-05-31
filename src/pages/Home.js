@@ -1,10 +1,14 @@
 import React from 'react';
-import Header from '../components/Header/Header';
+import Services from '../components/Header/Services';
+import Choose from './Choose';
+import Create from './Create';
 
 const Home = () => {
     return (
         <div>
-            <Header />
+            <Services />
+            <Choose />
+            <Create />
         </div>
     );
 };

@@ -1,12 +1,24 @@
 import React from "react";
-import { Card, Carousel, Container, Nav, Navbar } from "react-bootstrap";
-import { AiOutlineYoutube } from "react-icons/ai";
+import {
+  Card,
+  Carousel,
+  Container,
+  Nav,
+  Navbar,
+  NavDropdown
+} from "react-bootstrap";
+import { BsArrowRightCircleFill } from "react-icons/bs";
+import { IoIosCreate } from "react-icons/io";
 import "./Header.css";
 
 const Header = () => {
   return (
     <header className="header">
-      <Navbar expand="lg" className="py-3 sticky-top">
+      <Navbar
+        expand="lg"
+        className="py-3 position-fixed w-100 shadow"
+        style={{ zIndex: 50, background: "white" }}
+      >
         <Container container="true">
           <Navbar.Brand href="#" className="fw-bold">
             CAPITAL DOCTOR
@@ -18,25 +30,573 @@ const Header = () => {
               style={{ maxHeight: "150px" }}
               navbarScroll
             >
-              <Nav.Link className="mx-lg-2" href="#action1">
+              <Nav.Link  href="#action1">
                 Home
               </Nav.Link>
-              <Nav.Link className="mx-lg-2" href="#product">
-                Product
-              </Nav.Link>
-              <Nav.Link className="mx-lg-2" href="#service">
-                Service
-              </Nav.Link>
-              <Nav.Link className="mx-lg-2" href="#client">
-                Become a Client
-              </Nav.Link>
-              <Nav.Link className="mx-lg-2" href="#about">
-                About us
-              </Nav.Link>
+              <NavDropdown
+                title="Product & Services"
+                id="navbarScrollingDropdown"
+              >
+                <NavDropdown
+                  title="Issue Management"
+                  id="navbarScrollingDropdown"
+                >
+                  <h6 className="px-2">Copper teach industry LTD.</h6>
+                  <NavDropdown.Item href="#action3">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Prospectus</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action4">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">IPO Application Process</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <h6 className="px-2">Olmex Electrode Limited</h6>
+                  <NavDropdown.Item href="#action5">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">IPO Application Process</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Prospectus</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">IPO Application Process</p>
+                    </div>
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </NavDropdown>
+              {/* Become A Client */}
+              <NavDropdown title="Become A Client" id="navbarScrollingDropdown">
+                <NavDropdown
+                  title="Bangladeshi Individuals"
+                  id="navbarScrollingDropdown"
+                >
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 1</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 2</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 3</p>
+                    </div>
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown
+                  title="Bangladeshi Institutions"
+                  id="navbarScrollingDropdown"
+                >
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 1</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 2</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 3</p>
+                    </div>
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown
+                  title="Foreign Investors"
+                  id="navbarScrollingDropdown"
+                >
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 1</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 2</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 3</p>
+                    </div>
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="NRBs" id="navbarScrollingDropdown">
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 1</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 2</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 3</p>
+                    </div>
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown
+                  title="Daily Market Commentary"
+                  id="navbarScrollingDropdown"
+                >
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 1</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 2</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 3</p>
+                    </div>
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Research" id="navbarScrollingDropdown">
+                  <NavDropdown.Item href="#action6">
+                    <div>
+                      <div className="d-flex justify-content-between">
+                        <p>Research</p>
+                        <IoIosCreate style={{ fontSize: "28px" }} />
+                      </div>
+                    </div>
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </NavDropdown>
+              {/* About US Dropdown */}
+              <NavDropdown title="About us" id="navbarScrollingDropdown">
+                <NavDropdown
+                  title="Capital Profile"
+                  id="navbarScrollingDropdown"
+                >
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 1</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 2</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 3</p>
+                    </div>
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown
+                  title="Mission & Vision"
+                  id="navbarScrollingDropdown"
+                >
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 1</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 2</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 3</p>
+                    </div>
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown
+                  title="Board of Director"
+                  id="navbarScrollingDropdown"
+                >
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 1</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 2</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 3</p>
+                    </div>
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown
+                  title="Management Executive"
+                  id="navbarScrollingDropdown"
+                >
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 1</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 2</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 3</p>
+                    </div>
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Circulation" id="navbarScrollingDropdown">
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 1</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 2</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 3</p>
+                    </div>
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown
+                  title="Career Opportunity"
+                  id="navbarScrollingDropdown"
+                >
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 1</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 2</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 3</p>
+                    </div>
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Contacts" id="navbarScrollingDropdown">
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 1</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 2</p>
+                    </div>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">
+                    <div
+                      style={{ fontSize: "16px" }}
+                      className="d-flex justify-items-center"
+                    >
+                      <p className="mb-0">
+                        <BsArrowRightCircleFill className="text-success" />
+                      </p>
+                      <p className="ms-2 mb-0">Item 3</p>
+                    </div>
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </NavDropdown>
+              <NavDropdown title="Downloads" id="navbarScrollingDropdown">
+                <h6 className="px-2">Forms</h6>
+                <NavDropdown.Item href="#action3">
+                  <div
+                    style={{ fontSize: "16px" }}
+                    className="d-flex justify-items-center"
+                  >
+                    <p className="mb-0">
+                      <BsArrowRightCircleFill className="text-success" />
+                    </p>
+                    <p className="ms-2 mb-0">All Forms</p>
+                  </div>
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <h6 className="px-2">Notice / Circular</h6>
+                <NavDropdown.Item href="#action3">
+                  <div
+                    style={{ fontSize: "16px" }}
+                    className="d-flex justify-items-center"
+                  >
+                    <p className="mb-0">
+                      <BsArrowRightCircleFill className="text-success" />
+                    </p>
+                    <p className="ms-2 mb-0">BSEC</p>
+                  </div>
+                </NavDropdown.Item>
+              </NavDropdown>
             </Nav>
-            <div className="link-hover">
-              <span className="me-1">Youtube</span>
-              <AiOutlineYoutube className="fs-2" />
+            <div className="link-hover mx-1">
+              <button className="btn btn-primary ">Register</button>
+            </div>
+            <div className="link-hover mx-1">
+              <button className="btn btn-success ">Login</button>
             </div>
           </Navbar.Collapse>
         </Container>
@@ -46,7 +606,11 @@ const Header = () => {
         <Carousel.Item>
           <div
             className="w-100"
-            style={{ minHeight: "83vh", maxHeight: "90vh" }}
+            style={{
+              minHeight: "88vh",
+              maxHeight: "100vh",
+              marginTop: "100px",
+            }}
           >
             <div className="container mt-5">
               <div className="row pt-5">
@@ -107,7 +671,11 @@ const Header = () => {
         <Carousel.Item>
           <div
             className="w-100"
-            style={{ minHeight: "83vh", maxHeight: "90vh" }}
+            style={{
+              minHeight: "88vh",
+              maxHeight: "100vh",
+              marginTop: "100px",
+            }}
           >
             <div className="container mt-5">
               <div className="row pt-5">
@@ -163,7 +731,11 @@ const Header = () => {
         <Carousel.Item>
           <div
             className="w-100"
-            style={{ minHeight: "83vh", maxHeight: "90vh" }}
+            style={{
+              minHeight: "88vh",
+              maxHeight: "100vh",
+              marginTop: "100px",
+            }}
           >
             <div className="container mt-5">
               <div className="row pt-5">

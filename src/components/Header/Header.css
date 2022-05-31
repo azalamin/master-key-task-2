@@ -17,3 +17,17 @@ body {
 .link-hover:hover {
   color: red;
 }
+
+.cursor {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.item:hover {
+  color: yellow !important;
+}
+.cursor:hover {
+  background-color: #1a093f !important;
+}
+.custom-bg {
+  background-color: #f7f7f7f7;
+}
