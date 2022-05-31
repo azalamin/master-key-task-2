@@ -7,7 +7,12 @@ const Services = () => {
     <div className="bg-white pb-5">
       <SectionTitle>Product & Services</SectionTitle>
       <div className="container row gap-5 justify-content-center mb-5 mx-auto mt-5">
-        <div className="col-md-5 bg-primary p-3 cursor">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+          className="col-md-5 bg-primary p-3 cursor"
+        >
           <div>
             <h3 className="text-white">Copper teach industry LTD.</h3>
             <div className="ms-3">
@@ -32,7 +37,12 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-5 bg-primary p-3 cursor">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+          className="col-md-5 bg-primary p-3 cursor"
+        >
           <div>
             <h3 className="text-white">Olmex Electrode Limited</h3>
             <div className="ms-3">
@@ -70,7 +80,12 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-5 bg-primary p-3 cursor">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+          className="col-md-5 bg-primary p-3 cursor"
+        >
           <div>
             <h3 className="text-white">Zaheen Spinning LTD.</h3>
             <div className="ms-3">

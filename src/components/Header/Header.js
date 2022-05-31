@@ -30,9 +30,7 @@ const Header = () => {
               style={{ maxHeight: "150px" }}
               navbarScroll
             >
-              <Nav.Link  href="#action1">
-                Home
-              </Nav.Link>
+              <Nav.Link href="#action1">Home</Nav.Link>
               <NavDropdown
                 title="Product & Services"
                 id="navbarScrollingDropdown"
@@ -614,7 +612,7 @@ const Header = () => {
           >
             <div className="container mt-5">
               <div className="row pt-5">
-                <div className="col-6">
+                <div className="col-md-6">
                   <h3
                     data-aos="fade-right"
                     data-aos-delay="400"
@@ -630,7 +628,7 @@ const Header = () => {
                   data-aos="fade-right"
                   data-aos-delay="200"
                   data-aos-duration="1000"
-                  className="col-6"
+                  className="col-md-6"
                 >
                   <div className="row">
                     <div className="col">
@@ -679,7 +677,7 @@ const Header = () => {
           >
             <div className="container mt-5">
               <div className="row pt-5">
-                <div className="col-6">
+                <div className="col-md-6">
                   <h3
                     data-aos="fade-right"
                     data-aos-delay="400"
@@ -691,7 +689,7 @@ const Header = () => {
                     Include Securities
                   </h3>
                 </div>
-                <div className="col-6">
+                <div className="col-md-6">
                   <div className="row">
                     <div className="col">
                       <Card className="bg-white text-white">
@@ -739,7 +737,7 @@ const Header = () => {
           >
             <div className="container mt-5">
               <div className="row pt-5">
-                <div className="col-6">
+                <div className="col-md-6">
                   <h3
                     data-aos="fade-right"
                     data-aos-delay="400"
@@ -751,7 +749,7 @@ const Header = () => {
                     Investment Scheme
                   </h3>
                 </div>
-                <div className="col-6">
+                <div className="col-md-6">
                   <div className="row">
                     <div className="col">
                       <Card className="bg-white text-white">

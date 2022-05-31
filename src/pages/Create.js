@@ -5,7 +5,12 @@ const Create = () => {
     return (
       <div className="container py-5">
         <div className="row mx-auto mt-5 justify-content-center align-items-center">
-          <div className="col-md-6">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+            className="col-md-6 text-center text-md-start"
+          >
             <div className="">
               <h3 className="display-4 fw-bold">
                 Your hard work & dedication reach you
@@ -18,7 +23,12 @@ const Create = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-6 d-flex justify-content-center align-items-center">
+          <div
+            data-aos="zoom-in-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+            className="col-md-6 d-flex justify-content-center align-items-center"
+          >
             <img
               className="img-fluid"
               style={{ height: "500px" }}
